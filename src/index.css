@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+html,
+body {
+  width: 100%;
+  color: rgb(230, 227, 227);
+  background-color: black; 
+  font-family: sans-serif
+}
+
+
+@utility flex-between {
+  @apply flex flex-row justify-between ;
+}
+
+@utility headings {
+  @apply text-[23px] font-sans
+}
+@utility h3{
+  @apply tracking-tight
+}
+
+@utility nav {
+  @apply p-4 items-center bg-transparent;
+}
+
+@utility side-nav{
+  @apply absolute right-4 border-2 border-gray-500 bg-black text-shadow-white p-10
+}
+
+@utility side-nav-li {
+  @apply py-1 px-1 border-b-2 font-serif font-light
+}
+
+@utility hero-text {
+  @apply flex justify-center text-center  items-center bottom-3 left-0.5 -translate-x-0.5 flex-col absolute  z-10 tracking-tight
+}
+
+@utility hero {
+  @apply  relative w-full h-screen overflow-hidden
+}
+@utility hero-h1 {
+  @apply text-[clamp(2.8rem,2.5vw,5rem)]
+}
+
+@utility masked-img{
+   mask-image: linear-gradient(black, black);
+   mask-repeat: no-repeat;
+   mask-position: center;
+   mask-size: 200px 100px;
+}
