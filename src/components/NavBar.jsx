@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Menu } from 'lucide-react';
 import { X } from 'lucide-react';
-import SideNav from './sideNav';
+import SideNav from './SideNav';
 const NavBar = () => {
   const [navOpen, setNavOpen] = useState(false)
   const [hamClick, setHamClick] = useState(true)
